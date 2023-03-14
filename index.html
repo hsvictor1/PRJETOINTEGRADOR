@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" <link rel="stylesheet" href="custom.css" </head>
+
+<body>
+    <h1>BILLING PLANNER</h1>
+
+    <section past_due>
+        <div class="inc-exp-container1">
+            <div class="container">
+                <h2>Monthly Exprenses</h2>
+                <div class="inc-exp-container">
+                    <div>
+                        <h3> Total </h3>
+                        <p id="totalDisplay"> R$0,00 </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <h3>Monthly Expenses - REGISTERED </h3>
+
+                    <table id="data-table">
+                        <thead>
+                            <tr>
+                                <th>DUE DATE</th>
+                                <th>DESCRIPTION</th>
+                                <th>VALUE (R$)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <a href="=#" onclick="mPDA" </a>
+                    </table>
+                    <section>
+                        <a href="#" onclick="Modal.open()" class="button.new"> + New Monthly Esprenses </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div id="form">
+                <h3>NEW MONTHLY ESPRENSES </h3>
+                <form action="" onsubmit="Form.submit(event)">
+                    <div class="input-group">
+                        <label class="sr-only" for="description">
+                            <input type="text" id="description" placeholder="DESCRIPTION" />
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="amount">
+                            <input type="number" step="0.01" id="amount" placeholder="0,00" />
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="date">
+                            <input type="date" id="date" placeholder="Data" />
+                    </div>
+                    <div class="input-group actions">
+                        <a onclick="Modal.close()" href="#" class="button cancel">CANCEL</a>
+                        <button class="btn-outlinr-sucess" onclick="Modal.close()">SAVE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     
+       <script src="./scripts.js"></script>
+
+    </body=>
+    <h1>BILLING PLANNER</h1>
+
+</html>
